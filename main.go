@@ -1,9 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"net/http"
+)
 
-
-func (w http.ResponseWriter, r *http.Request) {
-	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("Hello, World!"))
-	
+func requestHandler (w http.ResponseWriter, r *http.Request) {
+	fmt.Println("This is the new server")
 }
